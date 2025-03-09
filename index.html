@@ -23,8 +23,8 @@
             width: 700px;
             border-radius: 15px;
             overflow: hidden;
-            padding: 20px 0;
-            /* Padding top and bottom */
+            padding: 500px 0 20px 0;
+            /* Increased top padding to 40px, kept bottom at 20px */
             background-color: transparent;
             /* No background color */
         }
@@ -81,23 +81,13 @@
             text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
         }
 
-        .rsvp-button {
-            background-color: #18cd12;
-            /* Roaring orange */
-        }
-
-        .rsvp-button:hover {
-            background-color: #18cd12;
-            transform: scale(1.1);
-        }
-
         .amazon-button {
             background-color: #126BAE;
             /* Jungle green */
         }
 
         .amazon-button:hover {
-            background-color: #126BAE;
+            background-color: #1c8ce2;
             transform: scale(1.1);
         }
 
@@ -107,7 +97,7 @@
         }
 
         .target-button:hover {
-            background-color: #C60000;
+            background-color: #ff3636;
             transform: scale(1.1);
         }
     </style>
@@ -117,14 +107,13 @@
     <div class="invite-container">
         <div class="content">
             <div class="invite-image">
-                <img src="https://i.ibb.co/PGyHH13G/BBS587-Invitation001-1-1.jpg" alt="Dinosaur Baby Shower Invite">
+                <img src="invite.jpg" alt="Dinosaur Baby Shower Invite">
             </div>
             <div class="details">
                 <p>One small request in lieu of a card please bring a signed book for baby Rene Isaiah.</p>
-                <p>Please bring diapers and/or wipes to enter a raffle.</p>
+                <p>Additionally, please bring diapers and/or wipes to enter a raffle.</p>
             </div>
             <div class="button-container">
-                <a href="tel:3239726165" class="rsvp-button">RSVP (Roar Yes or No!)</a>
                 <a href="https://www.amazon.com/baby-reg/desire-derrera-june-2025-riverside/1NHWQQRGNWXLZ?ref_=cm_sw_r_apann_dp_X45AJZDWEHSZ7E3EHZC7_1&language=en_US"
                     target="_blank" class="registry-button amazon-button">Amazon Dino Den</a>
                 <a href="http://tgt.gifts/dezandbryanbaby" target="_blank" class="registry-button target-button">Target
@@ -132,6 +121,20 @@
             </div>
         </div>
     </div>
+
+    <!-- Add confetti library and script -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script>
+        // Trigger confetti on page load
+        window.onload = function () {
+            confetti({
+                particleCount: 150, // Number of confetti pieces
+                spread: 70,       // Spread angle
+                origin: { y: 0.6 }, // Start slightly below the top center
+                colors: ['#FF4500', '#228B22', '#8B4513', '#FFD700', '#C3D4E0'] // Dino-themed colors
+            });
+        };
+    </script>
 </body>
 
 </html>
