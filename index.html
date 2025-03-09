@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dino-Mite Baby Shower!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Fredoka One', cursive;
+            background: url('https://www.transparenttextures.com/patterns/leaf.png') repeat, #C3D4E0;
+            /* Soft blue-gray */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .invite-container {
+            width: 700px;
+            border-radius: 15px;
+            overflow: hidden;
+            padding: 20px 0;
+            /* Padding top and bottom */
+            background-color: transparent;
+            /* No background color */
+        }
+
+        .content {
+            padding: 25px;
+            text-align: center;
+        }
+
+        .invite-image {
+            margin: 20px 0;
+        }
+
+        .invite-image img {
+            max-width: 100%;
+            height: auto;
+            border: 3px solid #A3B4C0;
+            /* Darker tint of #C3D4E0 */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            /* Shadow kept on image */
+        }
+
+        .details {
+            margin: 20px 0;
+            font-size: 20px;
+            color: #333;
+            background-color: rgba(255, 255, 255, 0.6);
+            /* Kept for readability */
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        .button-container {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            /* Stack buttons vertically */
+            align-items: center;
+            /* Center buttons horizontally */
+        }
+
+        .rsvp-button,
+        .registry-button {
+            display: inline-block;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 18px;
+            margin: 8px;
+            /* Margin for spacing between buttons */
+            transition: transform 0.3s ease;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        .rsvp-button {
+            background-color: #18cd12;
+            /* Roaring orange */
+        }
+
+        .rsvp-button:hover {
+            background-color: #18cd12;
+            transform: scale(1.1);
+        }
+
+        .amazon-button {
+            background-color: #126BAE;
+            /* Jungle green */
+        }
+
+        .amazon-button:hover {
+            background-color: #126BAE;
+            transform: scale(1.1);
+        }
+
+        .target-button {
+            background-color: #C60000;
+            /* Dino brown */
+        }
+
+        .target-button:hover {
+            background-color: #C60000;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="invite-container">
+        <div class="content">
+            <div class="invite-image">
+                <img src="https://i.ibb.co/PGyHH13G/BBS587-Invitation001-1-1.jpg" alt="Dinosaur Baby Shower Invite">
+            </div>
+            <div class="details">
+                <p>One small request in lieu of a card please bring a signed book for baby Rene Isaiah.</p>
+                <p>Please bring diapers and/or wipes to enter a raffle.</p>
+            </div>
+            <div class="button-container">
+                <a href="tel:3239726165" class="rsvp-button">RSVP (Roar Yes or No!)</a>
+                <a href="https://www.amazon.com/baby-reg/desire-derrera-june-2025-riverside/1NHWQQRGNWXLZ?ref_=cm_sw_r_apann_dp_X45AJZDWEHSZ7E3EHZC7_1&language=en_US"
+                    target="_blank" class="registry-button amazon-button">Amazon Dino Den</a>
+                <a href="http://tgt.gifts/dezandbryanbaby" target="_blank" class="registry-button target-button">Target
+                    Fossil Finds</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
